@@ -16,7 +16,7 @@ class Table5 extends Component {
 
    renderTest(name){
        return(
-           name=='Ali' ? <td>{name}</td> : <td>Test</td>
+           name==='Ali' ? <td>{name}</td> : <td>Test</td>
        )
    }
     renderTableHeader() {
