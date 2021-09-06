@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Table5 from './components/Table5'
+import Sidebar from './components/Sidebar'
 
 var data = [
   {id: 1, name: 'Gob', value: '2'},
@@ -14,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <p className="Table-header">Basic Table</p>
-        <Table5/>
+        <Sidebar/>
       </div>
     );
   }

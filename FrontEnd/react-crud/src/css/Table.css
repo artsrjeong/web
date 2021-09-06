@@ -4,12 +4,25 @@
     padding: 10px;
     text-align: left;
 }
- 
- 
+
 .GeorgeMichael-Row {
     background-color: plum;
 }
  
 .Other-Row {
     background-color: greenyellow;
+}
+
+.row > div {
+    background: rgb(219, 209, 219);
+    border: 1px solid black;
+}
+
+.container > div {
+    border: 1px solid black;
+}
+
+.no-gutters {
+    margin-right: 0;
+    margin-left: -8px;
 }

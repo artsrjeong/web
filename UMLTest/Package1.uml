@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Package xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_QW8VoApgEeyhF4ySeHU0CQ" name="Package1">
+  <packagedElement xmi:type="uml:Class" xmi:id="_dxPXkApgEeyhF4ySeHU0CQ" name="RegulationSystem">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ckKD8AphEeyhF4ySeHU0CQ" name="maintainSpeed"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_fCypkAphEeyhF4ySeHU0CQ" name="WaitForNextperiod"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_jcHaQAphEeyhF4ySeHU0CQ" name="waitForNextPeriod"/>
+    <nestedClassifier xmi:type="uml:Signal" xmi:id="_oMziEAphEeyhF4ySeHU0CQ" name="displayState"/>
+    <nestedClassifier xmi:type="uml:Signal" xmi:id="_qJ2dkAphEeyhF4ySeHU0CQ" name="getSpeed"/>
+    <nestedClassifier xmi:type="uml:Signal" xmi:id="_tcIGoAphEeyhF4ySeHU0CQ" name="startRegulating"/>
+    <nestedClassifier xmi:type="uml:Signal" xmi:id="_ve9hEAphEeyhF4ySeHU0CQ" name="updateSpeedDisplay"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zd6C4AphEeyhF4ySeHU0CQ" name="RegulatorDisplay">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_1uC5gAphEeyhF4ySeHU0CQ" name="displayStatus"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3yHqEAphEeyhF4ySeHU0CQ" name="RegularOnOffButton"/>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_ZmZc4ApiEeyhF4ySeHU0CQ" name="Interaction4">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_S1svsApjEeyhF4ySeHU0CQ"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_rSIKEAqqEey2aot3Nuawfw" name="RegulatorOnOffButton"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fs79sAqsEey2aot3Nuawfw" name="RegulationSystem"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_oN7uAApiEeyhF4ySeHU0CQ" name="Lifeline1" represents="_rSIKEAqqEey2aot3Nuawfw" coveredBy="_lfUzEAqsEey2aot3Nuawfw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_jYqeAAqrEey2aot3Nuawfw" name="Lifeline4" represents="_fs79sAqsEey2aot3Nuawfw" coveredBy="_lfWBMAqsEey2aot3Nuawfw _A1q5IAqtEey2aot3Nuawfw _A1sHQAqtEey2aot3Nuawfw _HfLjwAqtEey2aot3Nuawfw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_8AM_AAqsEey2aot3Nuawfw" name="RegulatorDisplay" coveredBy="_HfMx4AqtEey2aot3Nuawfw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lfUzEAqsEey2aot3Nuawfw" name="Message6SendEvent" covered="_oN7uAApiEeyhF4ySeHU0CQ" message="_lfTk8AqsEey2aot3Nuawfw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_lfWBMAqsEey2aot3Nuawfw" name="Message6ReceiveEvent" covered="_jYqeAAqrEey2aot3Nuawfw" message="_lfTk8AqsEey2aot3Nuawfw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_A1q5IAqtEey2aot3Nuawfw" name="Message10SendEvent" covered="_jYqeAAqrEey2aot3Nuawfw" message="_A1prAAqtEey2aot3Nuawfw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_A1sHQAqtEey2aot3Nuawfw" name="Message10ReceiveEvent" covered="_jYqeAAqrEey2aot3Nuawfw" message="_A1prAAqtEey2aot3Nuawfw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HfLjwAqtEey2aot3Nuawfw" name="Message13SendEvent" covered="_jYqeAAqrEey2aot3Nuawfw" message="_HfKVoAqtEey2aot3Nuawfw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_HfMx4AqtEey2aot3Nuawfw" name="Message13ReceiveEvent" covered="_8AM_AAqsEey2aot3Nuawfw" message="_HfKVoAqtEey2aot3Nuawfw"/>
+    <message xmi:type="uml:Message" xmi:id="_lfTk8AqsEey2aot3Nuawfw" name="startRegulating()" messageSort="asynchCall" receiveEvent="_lfWBMAqsEey2aot3Nuawfw" sendEvent="_lfUzEAqsEey2aot3Nuawfw"/>
+    <message xmi:type="uml:Message" xmi:id="_A1prAAqtEey2aot3Nuawfw" name="maintainSpeed()" messageSort="asynchCall" receiveEvent="_A1sHQAqtEey2aot3Nuawfw" sendEvent="_A1q5IAqtEey2aot3Nuawfw"/>
+    <message xmi:type="uml:Message" xmi:id="_HfKVoAqtEey2aot3Nuawfw" name="displayStatus()" messageSort="asynchCall" receiveEvent="_HfMx4AqtEey2aot3Nuawfw" sendEvent="_HfLjwAqtEey2aot3Nuawfw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Bu-NwAqvEey2aot3Nuawfw" client="_3yHqEAphEeyhF4ySeHU0CQ" supplier="_dxPXkApgEeyhF4ySeHU0CQ"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Hq6nwAqvEey2aot3Nuawfw" client="_dxPXkApgEeyhF4ySeHU0CQ" supplier="_zd6C4AphEeyhF4ySeHU0CQ"/>
+</uml:Package>

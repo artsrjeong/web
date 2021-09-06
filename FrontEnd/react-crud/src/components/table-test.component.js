@@ -98,23 +98,65 @@ export default class TableTest extends Component {
 
   render() {
     return (
-        <div>
-        <p className="Table-header">Basic Table</p>            
-        <BootstrapTable data={this.data} selectRow={selectRowProp}>
-        <TableHeaderColumn isKey dataField='id'
-          >
-            ID
-          </TableHeaderColumn>
-          <TableHeaderColumn dataField='name'
-          >
-            Name
-          </TableHeaderColumn>
-          <TableHeaderColumn dataField='value'
-          >
-            Value
-          </TableHeaderColumn>
-        </BootstrapTable>
-      </div>
+      <div class="container no-gutters">
+        <div class="row justify-content-start">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-end">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-around">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+        <div class="row justify-content-between">
+          <div class="col-4">
+            One of two columns
+          </div>
+          <div class="col-4">
+            One of two columns
+          </div>
+        </div>
+</div>
+      //   <div>
+      //   <p className="Table-header">Basic Table</p>            
+      //   <BootstrapTable data={this.data} selectRow={selectRowProp}>
+      //   <TableHeaderColumn isKey dataField='id'
+      //     >
+      //       ID
+      //     </TableHeaderColumn>
+      //     <TableHeaderColumn dataField='name'
+      //     >
+      //       Name
+      //     </TableHeaderColumn>
+      //     <TableHeaderColumn dataField='value'
+      //     >
+      //       Value
+      //     </TableHeaderColumn>
+      //   </BootstrapTable>
+      // </div>
     );
   }
 }
