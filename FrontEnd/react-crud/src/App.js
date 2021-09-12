@@ -7,6 +7,7 @@ import AddTutorial from "./components/add-tutorial.component";
 import Tutorial from "./components/tutorial.component";
 import TutorialsList from "./components/tutorials-list.component";
 import TableTest from "./components/table-test.component";
+import Scroll from "./components/scroll.component";
 
 
 
@@ -36,6 +37,12 @@ class App extends Component {
                 TableTest
               </Link>
             </li>
+            <li className="nav-item">
+              <Link to={"/scroll"} className="nav-link">
+                Scroll
+              </Link>
+            </li>
+
           </div>
         </nav>
 
@@ -45,6 +52,7 @@ class App extends Component {
             <Route exact path="/add" component={AddTutorial} />
             <Route path="/tutorials/:id" component={Tutorial} />
             <Route exact path="/tableTest" component={TableTest} />
+            <Route exact path="/scroll" component={Scroll} />
           </Switch>
         </div>
       </div>

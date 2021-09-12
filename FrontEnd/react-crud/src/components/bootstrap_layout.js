@@ -3,7 +3,7 @@ import TutorialDataService from "../services/tutorial.service";
 import {BootstrapTable,TableHeaderColumn} from 'react-bootstrap-table';
 import '../css/Table.css';
 import '../../node_modules/react-bootstrap-table/css/react-bootstrap-table.css'
-import TreeView from 'treeview-react-bootstrap';
+
 
 var data = [
     {id: 1, name: 'Gob', value: '2'},
@@ -16,58 +16,6 @@ var data = [
       alert(`You just selected '${row['name']}'`)
     }
   }
-
-var tree = [
-  {
-    text: "John Peter",
-    nodes: [
-      {
-        text: "ID: 11111",
-        nodes: [
-          {
-            text: "VIN"
-          },
-          {
-            text: "Policy Effective Date"
-          },
-          {
-            text: "Policy Expiration Date"
-          },
-          {
-            text: "Vehicle Make"
-          },
-          {
-            text: "Vehicle Model"
-          }
-        ]
-      },
-      {
-        text: "ID: 123456",
-        nodes: [
-          {
-            text: "VIN"
-          },
-          {
-            text: "Policy Effective Date"
-          },
-          {
-            text: "Policy Expiration Date"
-          },
-          {
-            text: "Vehicle Make"
-          },
-          {
-            text: "Vehicle Model"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    text: "Scott Brown"
-  }
-];
-
 
   const selectRowProp = {
     mode: 'checkbox',
@@ -191,11 +139,6 @@ export default class TableTest extends Component {
             One of two columns
           </div>
         </div>
-
-<div>
-<TreeView data={tree}/>
-</div>
-
 </div>
       //   <div>
       //   <p className="Table-header">Basic Table</p>            
