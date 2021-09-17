@@ -32,6 +32,16 @@ export default class AddTutorial extends Component {
   }
 
   saveTutorial() {
+    var sel = document.getElementById("sel");
+    var val;
+    var i;
+    for (i = 0; i < sel.options.length; i++) {
+      if (sel.options[i].selected == true) {
+        val = sel.options[i].value;
+        alert(val);
+        break;
+      }
+    }
     var data = {
       title: this.state.title,
       description: this.state.description
@@ -102,7 +112,10 @@ export default class AddTutorial extends Component {
                 name="description"
               />
             </div>
-
+            <select name="sel" id="sel">
+    <option value="선택">선택</option>
+    <option value="1">1</option>
+</select>
             <button onClick={this.saveTutorial} className="btn btn-success">
               Submit
             </button>
