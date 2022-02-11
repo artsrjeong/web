@@ -6,7 +6,7 @@ export default class Scroll extends Component {
             <div>
                 <h3>Scroll down &darr;</h3>
                 <div id="container">
-                    <div class="item">1</div>
+                    <div class="item">1111111111111111111111111111111111111111111111111111</div>
                     <div class="item">2</div>
                     <div class="item">3</div>
                     <div class="item">4</div>

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import TutorialDataService from "../services/tutorial.service";
 import {BootstrapTable,TableHeaderColumn} from 'react-bootstrap-table';
 import '../css/Table.css';
-import '../../node_modules/react-bootstrap-table/css/react-bootstrap-table.css'
 import TreeView from 'treeview-react-bootstrap';
 
 var data = [
